@@ -1,0 +1,176 @@
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\bin\Debug\ServiceDefinition.csdef
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Antlr3.Runtime.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Antlr3.Runtime.pdb
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ApplicationInsights.config
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\CuraeAnalytics.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\CuraeAnalytics.dll.config
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\CuraeAnalytics.pdb
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\de\System.Spatial.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\es\System.Spatial.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\fr\System.Spatial.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\it\System.Spatial.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ja\System.Spatial.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ko\System.Spatial.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.Web.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.Web.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.ApplicationInsights.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.ApplicationInsights.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.Edm.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.Edm.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.OData.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.OData.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.Services.Client.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.Services.Client.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\MonAgentListener.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Newtonsoft.Json.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Newtonsoft.Json.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ru\System.Spatial.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Spatial.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Spatial.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Helpers.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Helpers.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Mvc.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Mvc.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Optimization.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Optimization.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Razor.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Razor.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.Deployment.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.Deployment.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.Razor.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.Razor.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.xml
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\WebGrease.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\documents\visual studio 2013\Projects\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\bin\Debug\ServiceDefinition.csdef
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Antlr3.Runtime.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Antlr3.Runtime.pdb
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ApplicationInsights.config
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\CuraeAnalytics.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\CuraeAnalytics.dll.config
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\CuraeAnalytics.pdb
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\de\System.Spatial.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\es\System.Spatial.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\fr\System.Spatial.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\it\System.Spatial.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ja\System.Spatial.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ko\System.Spatial.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.Web.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.Web.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.ApplicationInsights.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.ApplicationInsights.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.Edm.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.Edm.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.OData.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.OData.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.Services.Client.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Data.Services.Client.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\MonAgentListener.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Newtonsoft.Json.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\Newtonsoft.Json.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\ru\System.Spatial.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Spatial.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Spatial.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Helpers.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Helpers.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Mvc.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Mvc.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Optimization.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Optimization.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Razor.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.Razor.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.Deployment.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.Deployment.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.Razor.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.Razor.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\System.Web.WebPages.xml
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\WebGrease.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akasht\Documents\GitHub\CuraeApp\Web\CuraeCloudService\obj\Debug\CuraeAnalytics\bin\zh-Hant\System.Spatial.resources.dll
