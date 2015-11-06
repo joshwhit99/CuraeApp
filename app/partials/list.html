@@ -1,5 +1,22 @@
 
 <section class="patientpage">
+ <div class="container-fluid">
+    <header class="raw-fluid">
+        <h1 class="span12"> This is bootstrap header for test purpose</h1>
+    </header>
+    </div>
+<!--<nav class="navbar">
+       <div class="navbar-inner">
+           <a class="brand" href="#">Home</a>
+           <ul class="nav">
+      <li><a class="active" href="#">Application</a></li>         
+           <li><a href="#">the Patients</a></li>
+           <li><a href="#"> the Reports</a></li>
+           </ul>
+
+       </div>
+     </nav>   -->
+     
 <div class="search">
         <h1> Patient Directory</h1>
         <label>search: </label>
@@ -25,10 +42,11 @@
                 orderBy:patientOrder:direction">
         <a href="#/details/{{patients.indexOf(item)}}">
       <div class="info">
-         <h2>{{item.id}}</h2>
+       
+         <h2>Patient {{item.resource.id}}</h2>
       </div>
          <div>   
-        <h2>{{item.name}}</h2>
+        <h2>{{item.resource.name[0].family[0]}}{{item.resource.name[0].given[0]}}</h2>
        <!-- <h3>{{item.address}}</h3>-->
       </div>
         </a>
