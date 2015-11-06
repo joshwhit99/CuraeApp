@@ -1,16 +1,22 @@
 
+
 <section class="patientinfo">
+    <link rel="shortcut icon" href="favicon.ico">
   <div class="patient cf" ng-model="patients">
     <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
     <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
-    <h1>{{patients[whichItem].name}}</h1>
-    <div class="info">
-      <h3>{{patients[whichItem].gender}}</h3>
-       <h3>Birth Date: {{patients[whichItem].birthDate}}</h3>
-        <h3>Status: {{patients[whichItem].actine}}</h3>
- 
-      <div class="bio">{{patients[whichItem].address}}</div>
-    </div>
+    
+    <h1>Name:{{patients[whichItem].resource.name[0].family[0]}}{{patients[whichItem].resource.name[0].given[0]}}</h1>
+    
+      <h3>Gender:{{patients[whichItem].resource.gender}}</h3>
+      <h3>Birth Date: {{patients[whichItem].resource.birthDate}}</h3>
+      
+      
+       <div class="bio">{{patients[whichItem].resource.address[0].line[0]}}, {{patients[whichItem].resource.address[0].city}}, {{patients[whichItem].resource.address[0].state}}</div>
+       <h4>{{patients1[whichItem1].resource.encounter.reference}} </h4> 
+      
+    
   </div>
+    
   <a href="#/index.html">&laquo; Back to search</a>
 </section>
