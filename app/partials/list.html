@@ -1,5 +1,22 @@
 
 <section class="patientpage">
+ <div class="container-fluid">
+    <header class="raw-fluid">
+        <h2 class="span12"> Please choose a Patient from the list. You may sort through the patients but you must click on the the patient name to see the statistical analysis.</h2>
+    </header>
+    </div>
+<!--<nav class="navbar">
+       <div class="navbar-inner">
+           <a class="brand" href="#">Home</a>
+           <ul class="nav">
+      <li><a class="active" href="#">Application</a></li>         
+           <li><a href="#">the Patients</a></li>
+           <li><a href="#"> the Reports</a></li>
+           </ul>
+
+       </div>
+     </nav>   -->
+     
 <div class="search">
         <h1> Patient Directory</h1>
         <label>search: </label>
@@ -21,18 +38,25 @@
     </div>
  
   <ul class="patientlist">
-    <li class="patient cf" ng-repeat="item in patients |filter: query |
+    <li class="patient cf" ng-repeat="item in patients1 |filter: query |
                 orderBy:patientOrder:direction">
-        <a href="#/details/{{patients.indexOf(item)}}">
+        <a href="#/details/{{patients1.indexOf(item)}}">
+            
       <div class="info">
-         <h2>{{item.id}}</h2>
+       
+         <h2>Patient {{item.id}}</h2>
       </div>
          <div>   
-        <h2>{{item.name}}</h2>
+        <h2>{{item.name[0].family[0]}} {{item.name[0].given[0]}}</h2>
+        
+        
        <!-- <h3>{{item.address}}</h3>-->
       </div>
         </a>
     </li>
+    
   </ul>
    
+
 </section>
+<script>$rootScope.id = patients1.indexOf(item);</script>
