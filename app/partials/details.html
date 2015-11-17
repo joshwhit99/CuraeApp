@@ -1,16 +1,23 @@
 
 <section class="patientinfo">
+    <link rel="shortcut icon" href="favicon.ico">
+    <h2>Please verify that you have selected the correct patient by the following information, to continue please click the button.</h2>
   <div class="patient cf" ng-model="patients">
     <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
     <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
-    <h1>{{patients[whichItem].name}}</h1>
-    <div class="info">
-      <h3>{{patients[whichItem].gender}}</h3>
-       <h3>Birth Date: {{patients[whichItem].birthDate}}</h3>
-        <h3>Status: {{patients[whichItem].active}}</h3>
- 
-      <div class="bio">{{patients[whichItem].address}}</div>
-    </div>
-  </div>
+    
+    <h1>Name: {{patients[0].resource.name[0].family[0]}}, {{patients[0].resource.name[0].given[0]}}</h1>
+    
+      <h3>Gender: {{patients[0].resource.gender}}</h3>
+      <h3>Birth Date: {{patients[0].resource.birthDate}}</h3>
+      
+      
+       <div class="bio">{{patients[0].resource.address[0].line[0]}}, {{patients[0].resource.address[0].city}}, {{patients[0].resource.address[0].state}}</div>
+       <h4> </h4> 
+       
+      
+    
+  
   <a href="#/index.html">&laquo; Back to search</a>
+  <a href="{{y}}">&gt;<button> Go to informational graphics on Diabetes</button></a>
 </section>
