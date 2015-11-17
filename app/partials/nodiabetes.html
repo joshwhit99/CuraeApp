@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<section class="reportinfo">
+    
+ <div class="patient cf" ng-model="patients40">
+        <!--this heading is an experament, will need to change it (doesnt work) -->
+        <h2> This patient does not have diabetes, here is some helpful information. </h2>
+        <h2>This Patient's BMI is in the {{BMIValue}} range</h2>
+        
+        </div>
+    <a href="#/index.html">&laquo; Back to search</a>
+    <!--this is how to get a graph -->
+    <div ng-controller="nodiabetesController">
+    <fusioncharts 
+    width="600" 
+    height="400"
+    type="pie3d"
+    datasource="{{myDataSource1}}"
+></fusioncharts>
+        <fusioncharts 
+    width="600" 
+    height="400"
+    type="column2d"
+    datasource="{{myDataSource2}}"
+    ></fusioncharts>
+        <fusioncharts 
+    width="600" 
+    height="400"
+    type="pie3d"
+    datasource="{{myDataSource3}}"
+></fusioncharts>
+        <fusioncharts 
+    width="600" 
+    height="400"
+    type="column2d"
+    datasource="{{myDataSource4}}"
+    ></fusioncharts>
+
+
+<div fusioncharts
+    width="600" 
+    height="400"
+    type="msline"
+    chart="{{attrs}}"
+    categories="{{categories}}"
+    dataset="{{dataset}}"
+    ></div>
+
+
+        
+    </div>
+        </section>
