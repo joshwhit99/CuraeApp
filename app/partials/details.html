@@ -1,5 +1,5 @@
 
-<section class="patientinfo">
+<section class="patientinfo page-header">
     <link rel="shortcut icon" href="favicon.ico">
     <h2>Please verify that you have selected the correct patient by the following information, to continue please click the button.</h2>
   <div class="patient cf" ng-model="patients">
@@ -14,10 +14,8 @@
       
        <div class="bio">{{patients[0].resource.address[0].line[0]}}, {{patients[0].resource.address[0].city}}, {{patients[0].resource.address[0].state}}</div>
        <h4> </h4> 
-       
-      
-    
-  
-  <a href="#/index.html">&laquo; Back to search</a>
-  <a href="{{y}}">&gt;<button> Go to informational graphics on Diabetes</button></a>
+
+  <a href="#/index.html"><button class="btn btn-info">Back to Search</button></a>
+      <br><br>
+  <a href="{{y}}"> <button class="btn btn-info"> Go to informational graphics on Diabetes</button></a>
 </section>
