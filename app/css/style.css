@@ -226,7 +226,7 @@ a.small {
   outline: 0;
 }
 
-/* Artist List Styles */
+/* Patient List Styles */
 
 .patientlist {
   background: #EEE8D5;
@@ -267,7 +267,7 @@ a.small {
   
 }
 
-.artist img {
+.patient img {
   display: block;
   float: left;
   width: 60px;
