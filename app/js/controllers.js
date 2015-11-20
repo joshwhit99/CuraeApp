@@ -197,6 +197,9 @@ if (data11.entry[0].resource.gender === "male"){ismale = "yes";}
    });
   
 }]);  
+patientControllers.controller('technology_usedController', ['$scope','$rootScope','$http','$routeParams',
+    function ($scope, $rootScope, $http, $routeParams){}]);
+    
 patientControllers.controller('nodiabetesController', ['$scope','$rootScope','$http','$routeParams',
       function ($scope, $rootScope, $http, $routeParams){
           
