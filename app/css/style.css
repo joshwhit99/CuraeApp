@@ -185,7 +185,7 @@ a.small {
 }
 
 .btn:hover {
-    background: #09576D;
+  background: #475B62;
 }
 
 .search label {
@@ -316,4 +316,34 @@ a.small {
 
 .patientinfo .btn {
 
+}
+
+.reportinfo {
+  font-size: 1.1em;
+  line-height: 160%;
+  background: #EEE8D5;
+  color: #0F4150;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.reportinfo h1{
+  font-size: 1.8em;
+  margin-bottom: 0;
+}
+
+.reportinfo img {
+  width: 40%;
+  max-width: 130px;
+  border-radius: 20px;
+}
+
+.reportinfo .btn {
+  background: #a33f70;
+  color: #FCF4DC;
 }
