@@ -24,6 +24,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
        templateUrl: 'partials/nodiabetes.html',
        controller: 'nodiabetesController'
   }).
+  when('/technology_used',{
+       templateUrl: 'partials/technology_used.html',
+       controller: 'technology_usedController'
+  }).
   otherwise({
     redirectTo: '/list'
   });
