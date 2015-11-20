@@ -16,23 +16,8 @@ var getJSON = function(url) {
 };
 
 var filename = 'Users/ez9115/NetBeansProjects/CuraeApp/app/js/data.json';
-//saveJSONData(data,fileName);
 
 //All Files	/Users/ez9115/NetBeansProjects/CuraeApp/app/js/data.json
-
-
-/*var data1 = getJSON('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_id=Patient/1&_format=json').then(function(data) {
-    alert('Your Json result is:  ' + data.entry[0].resource.gender); //you can comment this, i used it to debug
-
-    result.innerText = data.entry[0].resource.gender; //display the result in an HTML element
-}, function(status) { //error detection....
-  alert('Something went wrong.');
-
-});*/
-
-
-
-
 
 var patientControllers = angular.module('patientControllers', []);
 
@@ -58,17 +43,9 @@ var saveJSONData = (function () {
     };
 }());
       $rootScope.id = 6  
-//$http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_format=json&_pretty=true').success(function(data) {
-//$http.get('js/data66').success(function(data) {
-//$http.get('https://raw.githubusercontent.com/joshwhit99/health/master/data66.json').success(function(data66) {
-     
+
         $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_format=json').success(function(data) {   
-//getJSON('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_format=json&_pretty=true').then(function(data) {
-     
-  //  console.log("data:"+data.entry);
-    //var filename = 'Users\joshua\Desktop\school\6440\CuraeApp\app\js\data66.json';
-//saveJSONData(data66,filename);
-//$scope.patients = data66;
+
 $http.get('js/data66.json').success(function(data10){
 $rootScope.patients1 = data10;
 //$rootScope.data33 = patients1;
@@ -76,8 +53,7 @@ $rootScope.patients1 = data10;
     $rootScope.choice = itemId;
    $rootScope.ismale = "no";
    
-//alert('%%%% After Your Json result is:  ' + data.entry[0].resource.birthDate)
-  //$rootScope.whichItem2=$routeParams.itemId;
+
   
           });
   });
@@ -85,18 +61,9 @@ $rootScope.patients1 = data10;
 
 patientControllers.controller('DetailsController', ['$scope','$rootScope','$http','$routeParams',
       function ($scope,$rootScope, $http, $routeParams){
-   //$http.get('js/data1.json').success(function(data){
-   //$http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_format=json&_pretty=true').success(function(data){
-        //$rootScope.id = patients1.indexOf(item);
-         // window.alert($routeParams.itemId)
- //         $http.get('js/data66.json').success(function(data10){
-//$rootScope.patients1 = data10;});
-          
-         // for (i = 0; i < $rootScope.patients1; i++){
-           //   if 
-         // }
+  
          $rootScope.y = "#/nodiabetes"
-         //$rootScope.y = "#/reports/0"
+         
   $rootScope.x = $routeParams.itemId;        
           
           $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_id='+$rootScope.patients1[$routeParams.itemId].id+'&_format=json').success(function(data11) {
@@ -114,7 +81,7 @@ patientControllers.controller('DetailsController', ['$scope','$rootScope','$http
    }
    $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Observation?code=17856-6&patient=' +$rootScope.patients1[$routeParams.itemId].id+ '&_format=json').success(function(data4) {
           $rootScope.patients40 = data4;
-         //  $rootScope.y = "#/reports/0";
+         
          
   if ($rootScope.patients40.total != 0){
       $rootScope.y = "#/reports/0";
@@ -132,22 +99,21 @@ patientControllers.controller('DetailsController', ['$scope','$rootScope','$http
                 $rootScope.y = "#/reports/0";
                     };
           });      
-   //if (hold[0].resource.gender == "male"){ismale = "yes";}
-   //if (ismale == "yes"){$rootScope.genderhosp = 22.25;} else{genderhosp = 23.26;}
+   
    /// the below pulls up the data for a patient with diabetes by looking at the loinc code and saves the data to patients1
    // can use the below template to pull any data, just copy and paste within this controller, just remember to change 
    // the data variable to something like data2, and the patient varitable to something like patients2
-   $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Observation?code=17856-6&patient=' +$rootScope.patients1[$routeParams.itemId].id+ '&_format=json').success(function(data1) {
+   $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Observation?code=17856-6&patient=' +$rootScope.patients1[$routeParams.itemId].id+ '&_format=json&_sort:desc&_count=1').success(function(data1) {
           $scope.patients1 = data1.entry;
    $scope.whichItem1=$routeParams.itemId;
    });
    //BMI
-   $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Observation?patient=' +$rootScope.patients1[$routeParams.itemId].id+ '&code=39156-5&_format=json').success(function(data5) {
+   $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Observation?patient=' +$rootScope.patients1[$routeParams.itemId].id+ '&code=39156-5&_format=json&_sort:desc&_count=1').success(function(data5) {
    $rootScope.patients5 = data5.entry;
    BMI = data5.entry[0].resource.valueQuantity.value;
    
     //AGE //Gender
-    $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_id=' +$rootScope.patients1[$routeParams.itemId].id+ '&_format=json').success(function(data6) {
+    $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_id=' +$rootScope.patients1[$routeParams.itemId].id+ '&_format=json&_sort:desc&_count=1').success(function(data6) {
    $rootScope.patients6 = data6.entry;
    year = data6.entry[0].resource.birthDate;
    AGE = 2015 - year.substr(0,4);
@@ -208,7 +174,7 @@ patientControllers.controller('DetailsController', ['$scope','$rootScope','$http
    // below is how to assign a value to an object or variable that can then be used for the 
    //entired code. I used it here because we will need to use the variable "p" i the graph 
    //for the report controller page. 
-   $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Observation?code=17856-6&patient=' +$rootScope.patients1[$routeParams.itemId].id+ '&_format=json').success(function(data4) {
+   $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Observation?code=17856-6&patient=' +$rootScope.patients1[$routeParams.itemId].id+ '&_format=json&_sort:desc&_count=1').success(function(data4) {
           $rootScope.patients4 = data4.entry;
    $scope.whichItem4=$routeParams.itemId;
    //p = data4.entry[0].resource.encounter.reference;
@@ -217,17 +183,15 @@ patientControllers.controller('DetailsController', ['$scope','$rootScope','$http
    AOneC = data4.entry[0].resource.valueString[6];
    };
    
-   //$rootScope.hold = data.entry;
+   
    //17856-6 - loinc code for A1c
-   //genderhosp = 22.25;
+  
    ismale = "no"
    genderhosp= "";
 genderamp= "";
 genderdeath= "";
 if (data11.entry[0].resource.gender === "male"){ismale = "yes";}
    if (ismale === "yes"){genderhosp = 22.25;genderamp = 0.37;genderdeath = 79.65;} else{genderhosp = 23.26; genderamp = 0.17;genderdeath = 72.09}
-   
-//<h4>{{patients1[whichItem1].resource.encounter.reference}} </h4> 
 
 });
    });
@@ -456,22 +420,14 @@ patientControllers.controller('ReportsController', ['$scope','$rootScope','$http
       function ($scope, $rootScope, $http, $routeParams){ //p=90;
    //$http.get('js/data1.json').success(function(data){
    $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_id=46&_format=json').success(function(data){
-   ///$scope.patients = data.entry;
-   ///$scope.whichItem=$routeParams.itemId;
-   //
-   //window.alert($rootScope.patients40.total)
+   
    $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Observation?code=17856-6&patient=' +$rootScope.patients1[$rootScope.x].id+ '&_format=json').success(function(data4) {
           $rootScope.patients40 = data4.entry;
-  // $scope.whichItem4=$routeParams.itemId;
-   //p = data4.entry[0].resource.encounter.reference;//data1.entry[0].resource.encounter.reference;
-   //window.alert(p)
-// 
-// pp = num.toString(p);
-  // p = 100
+  
   
   // this code checks to see if there is a loinc code.
 
-    //window.alert(y)
+    
  });
   }); 
   
@@ -744,9 +700,6 @@ $scope.dataset = [
     }
 ];
  ////////////
-//$scope.myDataSource.data[1].value = ""+p;
-
-
 }]);  
 
 
