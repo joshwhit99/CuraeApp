@@ -606,9 +606,9 @@ patientControllers.controller('ReportsController', ['$scope','$rootScope','$http
         };
         $scope.myDataSource6 = {
             chart: {
-                caption: "Fix Caption in Controllers.js",
+                caption: "Incidence of Death per 100,000",
                 subCaption: "",
-                numberSuffix: "%",
+                numberSuffix: "",
                 theme: "ocean"
             },
             data:[{
@@ -617,7 +617,7 @@ patientControllers.controller('ReportsController', ['$scope','$rootScope','$http
                 value: "75.81"
             },
                 {
-                    label: "Patient",
+                    label: "Patient's Gender",
                     value: ""+genderdeath
                 }
             ]
