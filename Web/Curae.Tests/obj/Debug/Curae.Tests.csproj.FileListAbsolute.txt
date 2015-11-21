@@ -1,0 +1,5 @@
+C:\Users\akasht\Desktop\CuraeAnalytics\Curae\Curae.Tests\bin\Debug\Curae.Tests.dll
+C:\Users\akasht\Desktop\CuraeAnalytics\Curae\Curae.Tests\bin\Debug\Curae.Tests.pdb
+C:\Users\akasht\Desktop\CuraeAnalytics\Curae\Curae.Tests\obj\Debug\Curae.Tests.csprojResolveAssemblyReference.cache
+C:\Users\akasht\Desktop\CuraeAnalytics\Curae\Curae.Tests\obj\Debug\Curae.Tests.dll
+C:\Users\akasht\Desktop\CuraeAnalytics\Curae\Curae.Tests\obj\Debug\Curae.Tests.pdb

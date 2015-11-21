@@ -1,0 +1,94 @@
+
+<section class="reportinfo">
+
+    <div class="page-header patient cf row" ng-model="patients">
+        <!--this heading is an experiment, will need to change it (doesnt work) -->
+        <span class="label label-info">
+        <h2> This patient does have diabetes, here is some helpful statistical information. </h2>
+        <h2> This patient's BMI is in the {{BMIValue}} range.</h2></span>
+        <!DOCTYPE html>
+    </div >
+
+    <a href="#/index.html"> &laquo; Back to search </a>
+    <!--this is how to get a graph -->
+    <div ng-controller="ReportsController">
+        <div class="row">
+            <div class="col-lg-3"><br></div>
+            <div class="col-lg-6"><br>
+                <span class="label label-info"><h2>Population Data</h2><br></span></div>
+        <div class="row">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div id="chartContainer" style="width:100%;height:100%;">
+                            <fusioncharts
+                                    type="column2d"
+                                    datasource="{{myDataSource2}}"
+                            ></fusioncharts></div></div>
+                    <div class="col-lg-6">
+                        <div id="chartContainer" style="width:100%;height:100%;">
+                            <fusioncharts
+                                    type="pie3d"
+                                    datasource="{{myDataSource1}}"
+                            ></fusioncharts></div></div>
+
+                    <div class="row">
+                <div class="col-lg-3"><br></div>
+                <div class="col-lg-6">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="pie3d"
+                                datasource="{{myDataSource3}}"
+                        ></fusioncharts></div></div></div>
+
+                    <div class="row">
+                        <div class="col-lg-3"><br></div>
+                        <div class="col-lg-6"><br>
+                <span class="label label-info"><h2>Patient Data</h2>
+
+                </span></div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div id="chartContainer" style="width:100%;height:100%;">
+                            <fusioncharts
+                                    type="column2d"
+                                    datasource="{{myDataSource}}"
+                            ></fusioncharts></div></div>
+                    <div class="col-lg-6">
+                        <div id="chartContainer" style="width:100%;height:100%;">
+                            <fusioncharts
+                                    type="column2d"
+                                    datasource="{{myDataSource4}}"
+                            ></fusioncharts></div></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div id="chartContainer" style="width:100%;height:100%;">
+                            <fusioncharts
+                                    type="column2d"
+                                    datasource="{{myDataSource5}}"
+                            ></fusioncharts></div></div>
+                    <div class="col-lg-6">
+                        <div id="chartContainer" style="width:100%;height:100%;">
+                            <fusioncharts
+                                    type="column2d"
+                                    datasource="{{myDataSource6}}"
+                            ></fusioncharts></div></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3"><br></div>
+                    <div class="col-lg-6">
+                        <div id="chartContainer" style="width:100%;height:100%;">
+                            <fusioncharts
+                                    type="msline"
+                                    chart="{{attrs}}"
+                                    categories="{{categories}}"
+                                    dataset="{{dataset}}"
+                            ></fusioncharts></div></div>
+                </div>
+            </div>
+        </div>
+
+</section>

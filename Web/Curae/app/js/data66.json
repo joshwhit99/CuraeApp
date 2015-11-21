@@ -1,0 +1,152 @@
+[
+{ "id":"81",
+                
+  "name":[
+                    {
+                        "family":[
+                            "Morton"
+                        ],
+                        "given":[
+                            "Colt",
+                            "C"
+                        ]
+                    }
+                ],
+"gender":"male",
+"birthDate":"1983-10-18",
+ "address":[
+                    {
+                        "use":"home",
+                        "line":[
+                            "823365 Mile Hi Way"
+                        ],
+ "city":"Atlanta",
+  "state":"GA",
+  "postalCode":"30369"
+                    }
+ ],
+ "active":"true"
+ },
+ { "id":"75",
+                
+  "name":[
+                    {
+                        "family":[
+                            "Bird"
+                        ],
+                        "given":[
+                            "Eden",
+                            "A"
+                        ]
+                    }
+                ],
+"gender":"male",
+"birthDate":"1960-07-14",
+ "address":[
+                    {
+                        "use":"home",
+                        "line":[
+                            "8658 Thomas Road"
+                        ],
+ "city":"Atlanta",
+  "state":"GA",
+  "postalCode":"30323"
+                    }
+ ],
+ "active":"true"
+ },
+ { "id":"1",
+                
+  "name":[
+                    {
+                        "family":[
+                            "Weldemeskel"
+                        ],
+                        "given":[
+                            "Nebiyou",
+                            "A"
+                        ]
+                    }
+                ],
+"gender":"male",
+"birthDate":"1978-10-22",
+ "address":[
+                    {
+                        "use":"home",
+                        "line":[
+                            "123 main st"
+                        ],
+ "city":"philadelphia",
+  "state":"PA",
+  "postalCode":"19104"
+                    }
+ ],
+ "active":"true"
+ },
+ {
+                        
+"id":"46",
+                
+                "name":[
+                    {
+                        "family":[
+                            "Michael"
+                        ],
+                        "given":[
+                            "Martha",
+                            "L"
+                        ]
+                    }
+                ],
+                "gender":"female",
+                "birthDate":"1972-07-21",
+                "address":[
+                    {
+                        "use":"home",
+                        "line":[
+                            "3540 Woronzof Drive"
+                        ],
+                        "city":"Atlanta",
+                        "state":"GA",
+                        "postalCode":"30388"
+                    }
+                ],
+                "active":true
+            },
+            
+       
+        {
+           
+                "id":"104",
+                
+                "name":[
+                    {
+                        "family":[
+                            "Blankenship"
+                        ],
+                        "given":[
+                            "Zahir",
+                            "M"
+                        ]
+                    }
+                ],
+                "gender":"male",
+                "birthDate":"1960-12-22",
+                "address":[
+                    {
+                        "use":"home",
+                        "line":[
+                            "3130 Chilkat Court"
+                        ],
+                        "city":"Atlanta",
+                        "state":"GA",
+                        "postalCode":"30388"
+                    }
+                ],
+                "active":true
+            }
+]
+            
+
+
+

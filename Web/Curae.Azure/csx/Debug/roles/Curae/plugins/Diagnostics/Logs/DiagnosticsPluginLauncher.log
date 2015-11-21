@@ -1,0 +1,14 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:51 AM] Emulator config file set to C:\Users\akasht\Desktop\CuraeAnalytics\Curae\Curae.Azure\csx\Debug\roles\Curae\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:51 AM] DiagnosticsStoreRootPath set to: C:\Users\akasht\AppData\Local\dftmp\Resources\8d45f3c3-00b3-4801-b3bb-2d1780a94eca
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:51 AM] Loading config file: C:\Users\akasht\Desktop\CuraeAnalytics\Curae\Curae.Azure\csx\Debug\roles\Curae\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:51 AM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:51 AM] Emulator config file set to C:\Users\akasht\Desktop\CuraeAnalytics\Curae\Curae.Azure\csx\Debug\roles\Curae\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:51 AM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:51 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:51 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:51 AM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:52 AM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:52 AM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:52 AM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:53 AM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [11/21/2015 1:40:53 AM] Resetting DiagnosticPlugin
