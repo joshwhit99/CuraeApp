@@ -2,14 +2,12 @@
 <section class="reportinfo">
 
     <div class="page-header patient cf row" ng-model="patients">
-        <!--this heading is an experiment, will need to change it (doesnt work) -->
-        <span class="label label-info">
-        <h2> This patient does have diabetes, here is some helpful statistical information. </h2>
-        <h2> This patient's BMI is in the {{BMIValue}} range.</h2></span>
+        <h2 style="text-align:center"> This patient has diabetes. <br></h2>
+        <h2 style="text-align:center"> This patient's BMI is in the {{BMIValue}} range. </h2>
         <!DOCTYPE html>
     </div >
 
-    <a href="#/index.html"> &laquo; Back to search </a>
+    <button class="btn btn-info"><a href="#/index.html"> &laquo; Patient Search </a></button>
     <!--this is how to get a graph -->
     <div ng-controller="ReportsController">
         <div class="row">
