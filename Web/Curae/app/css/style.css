@@ -83,7 +83,8 @@ html {
 }
 
 body  {
-  font-family: Merriweather, serif;
+  color: #666;
+  font-family: "Calibri", Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 160%;
   *zoom: 1;
@@ -91,19 +92,19 @@ body  {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bree Serif', serif;
+  font-family: "Calibri", Helvetica, sans-serif;
   font-weight: normal;
-  color: #475b62;
+  color: #555;
   text-shadow: 1px 1px rgb(255,255,255, 1);
 }
 
 a {
-  color: #145266;
+  color: #6bd4c8;
   font-family: Bree Serif, serif;
 }
 
 h1{
-  color: #145266;
+  color: #555;
   font-size: 2.2rem;
   line-height: 100%;
   margin-bottom: 10px;
@@ -112,13 +113,13 @@ h1{
 h2{ 
   font-size: 1.5rem;
   line-height: 90%;
-  color: #a33f70;
+  color: #555;
 }
 
 h3{ 
   margin-top: 0;
-  color: #bd3613;
-  line-height: 110%;
+  color: #555;
+  line-height: 1.1rem;
   margin-bottom: 5px;
 }
 
@@ -126,11 +127,10 @@ p {
   line-height: 1.3rem;
   color: #475B62;
   margin-bottom: 10px;
-  font-family: 'Merriweather';
 }
 
 a.small {
-  line-height: 100%;
+  line-height: 1rem;
   font-size: .9rem;
 }
 
@@ -138,8 +138,8 @@ a.small {
 /* Search Styles */
 
 .search {
-  background: #063642;
-  color: #EEE8D5;
+  background: #666;
+  color: #fff;
   width: 90%;
   min-width: 320px;
   max-width: 500px;
@@ -151,7 +151,7 @@ a.small {
 }
 
 .search h1 {
-  color: #EEE8D5;
+  color: #fff;
 }
 
 .btn {
@@ -167,8 +167,8 @@ a.small {
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 4px;
-    background: #a33f70;
-    color: #FCF4DC;
+    background: #555;
+    color: #fff;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -185,7 +185,7 @@ a.small {
 }
 
 .btn:hover {
-    background: #09576D;
+  background: #6bd4c8;
 }
 
 .search label {
@@ -197,8 +197,8 @@ a.small {
   width: 100%;
   padding: 10px 0 10px 15px;
   font-size: 1rem;
-  color: #475B62;
-  background: rgba(255,255,255,0.4);
+  color: #fff;
+  background: #475B62;
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 10px;
   outline: 0;
@@ -226,7 +226,7 @@ a.small {
   outline: 0;
 }
 
-/* Artist List Styles */
+/* Patient List Styles */
 
 .patientlist {
   background: #EEE8D5;
@@ -258,7 +258,8 @@ a.small {
 }
 
 .patientlist li:hover {
-  background: #FDF6E3;
+  color: #fff
+  background: #555;
   opacity:1;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -267,7 +268,7 @@ a.small {
   
 }
 
-.artist img {
+.patient img {
   display: block;
   float: left;
   width: 60px;
@@ -290,8 +291,8 @@ a.small {
 .patientinfo {
   font-size: 1.1em;
   line-height: 160%;
-  background: #EEE8D5;
-  color: #0F4150;
+  background: #666;
+  color: #fff;
   width: 90%;
   min-width: 320px;
   max-width: 620px;
@@ -304,8 +305,36 @@ a.small {
 }
 
 .patientinfo h1{
+  color: #fff;
   font-size: 1.8em;
   margin-bottom: 0;
+}
+
+.patientinfo h2{
+  color: #fff;
+  font-size: 1.6em;
+  margin-bottom: 0;
+}
+
+.patientinfo h3{
+  color: #fff;
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+.patientinfo h4{
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 0;
+
+.patientinfo body{
+  color: #fff;
+  font-size: 1em;
+}
+.patientinfo p {
+  line-height: 1.3rem;
+  color: #475B62;
+  margin-bottom: 10px;
 }
 
 .patientinfo img {
@@ -315,14 +344,15 @@ a.small {
 }
 
 .patientinfo .btn {
-
+  color: #6bd4c8;
+  background: #666;
 }
 
 .reportinfo {
   font-size: 1.1em;
   line-height: 160%;
-  background: #EEE8D5;
-  color: #0F4150;
+  background: #666;
+  color: #fff;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -333,7 +363,14 @@ a.small {
 }
 
 .reportinfo h1{
+  color: #fff;
   font-size: 1.8em;
+  margin-bottom: 0;
+}
+
+.reportinfo h2{
+  color: #fff;
+  font-size: 1.6em;
   margin-bottom: 0;
 }
 
@@ -344,6 +381,6 @@ a.small {
 }
 
 .reportinfo .btn {
-  background: #a33f70;
-  color: #FCF4DC;
+  background: #555;
+  color: #fff;
 }
