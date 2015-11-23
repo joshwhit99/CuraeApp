@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <section class="reportinfo">
-    
- <div class="patient cf" ng-model="patients40">
-        <!--this heading is an experament, will need to change it (doesnt work) -->
-        <h2> This patient does not have diabetes, here is some helpful information. </h2>
-        <h2>This Patient's BMI is in the {{BMIValue}} range</h2>
-        
-        </div>
-    <a href="#/index.html">&laquo; Back to search</a>
+    <div class="patient cf" ng-model="patients40">
+        <h2 style="text-align:center"> This patient does not have diabetes. </h2>
+        <h2 style="text-align:center"> This patient's BMI is in the {{BMIValue}} range. </h2>
+
+    </div>
+    <button class="btn btn-info"><a href="#/index.html"> &laquo; Back to search </a></button>
+
     <!--this is how to get a graph -->
     <div ng-controller="nodiabetesController">
-    <fusioncharts 
-    width="600" 
-    height="400"
-    type="pie3d"
-    datasource="{{myDataSource1}}"
-></fusioncharts>
-        <fusioncharts 
-    width="600" 
-    height="400"
-    type="column2d"
-    datasource="{{myDataSource2}}"
-    ></fusioncharts>
-        <fusioncharts 
-    width="600" 
-    height="400"
-    type="pie3d"
-    datasource="{{myDataSource3}}"
-></fusioncharts>
-        <fusioncharts 
-    width="600" 
-    height="400"
-    type="column2d"
-    datasource="{{myDataSource4}}"
-    ></fusioncharts>
+        <div class="row">
+            <div class="text-center" >
+                <h2>Population Data</h2><br><br></div></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="column2d"
+                                datasource="{{myDataSource2}}"
+                        ></fusioncharts></div></div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="pie3d"
+                                datasource="{{myDataSource1}}"
+                        ></fusioncharts></div></div></div>
 
+            <div class="row">
+                <div class="text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="pie3d"
+                                datasource="{{myDataSource3}}"
+                        ></fusioncharts></div></div></div>
 
-<div fusioncharts
-    width="600" 
-    height="400"
-    type="msline"
-    chart="{{attrs}}"
-    categories="{{categories}}"
-    dataset="{{dataset}}"
-    ></div>
-
-
-        
+            <div class="row">
+                <div class="text-center">
+                    <h2>Patient Data</h2><br><br></div></div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="column2d"
+                                datasource="{{myDataSource4}}"
+                        ></fusioncharts></div></div>
+                <div class="row">
+                    <div class="text-center">
+                        <div id="chartContainer" style="width:100%;height:100%;">
+                            <fusioncharts
+                                    type="msline"
+                                    chart="{{attrs}}"
+                                    categories="{{categories}}"
+                                    dataset="{{dataset}}"
+                            ></fusioncharts></div></div>
+                </div>
+            </div>
+        </div>
     </div>
-        </section>
+</section>
