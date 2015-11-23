@@ -21,8 +21,6 @@ var filename = 'Users/ez9115/NetBeansProjects/CuraeApp/app/js/data.json';
 
 var patientControllers = angular.module('patientControllers', []);
 
-var patientControllers = angular.module('patientControllers', []);
-
 //
 
 patientControllers.controller('ListController', ['$scope','$rootScope', '$http', function($scope,$rootScope, $http) {
@@ -42,7 +40,7 @@ var saveJSONData = (function () {
         window.URL.revokeObjectURL(url);
     };
 }());
-      $rootScope.id = 6  
+    $rootScope.id = 6;
 
         $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_format=json').success(function(data) {   
 
@@ -61,8 +59,8 @@ $rootScope.patients1 = data10;
 
 patientControllers.controller('DetailsController', ['$scope','$rootScope','$http','$routeParams',
       function ($scope,$rootScope, $http, $routeParams){
-  
-         $rootScope.y = "#/nodiabetes"
+
+          $rootScope.y = "#/nodiabetes";
          
   $rootScope.x = $routeParams.itemId;        
           
@@ -85,19 +83,19 @@ patientControllers.controller('DetailsController', ['$scope','$rootScope','$http
          
   if ($rootScope.patients40.total != 0){
       $rootScope.y = "#/reports/0";
-    };
+  }
     });
     $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Condition?code=46635009&patient=' +$rootScope.patients1[$routeParams.itemId].id+ '&_format=json').success(function(data78) {
-             $rootScope.patients41 = data78
+        $rootScope.patients41 = data78;
              if ($rootScope.patients41.total != 0){
                 $rootScope.y = "#/reports/0";
-                    };
+             }
              });
     $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Condition?code=44054006&patient=' +$rootScope.patients1[$routeParams.itemId].id+ '&_format=json').success(function(data77) {
-                    $rootScope.patients42 = data77
+        $rootScope.patients42 = data77;
                     if ($rootScope.patients42.total != 0){
                 $rootScope.y = "#/reports/0";
-                    };
+                    }
           });      
    
    /// the below pulls up the data for a patient with diabetes by looking at the loinc code and saves the data to patients1
@@ -118,11 +116,19 @@ patientControllers.controller('DetailsController', ['$scope','$rootScope','$http
    year = data6.entry[0].resource.birthDate;
    AGE = 2015 - year.substr(0,4);
    Gender = data6.entry[0].resource.gender;
-   $rootScope.BMIValue = "test"
-   if (BMI < 18.5){ $rootScope.BMIValue = "Underweight"; };
-   if (BMI > 18.5 && BMI <25){$rootScope.BMIValue = "Healthy";};
-   if (BMI < 30 && BMI >25){$rootScope.BMIValue = "Overwieght";};
-   if (BMI >35){$rootScope.BMIValue = "Obese";};
+        $rootScope.BMIValue = "test";
+        if (BMI < 18.5) {
+            $rootScope.BMIValue = "Underweight";
+        }
+        if (BMI > 18.5 && BMI < 25) {
+            $rootScope.BMIValue = "Healthy";
+        }
+        if (BMI < 30 && BMI > 25) {
+            $rootScope.BMIValue = "Overwieght";
+        }
+        if (BMI > 35) {
+            $rootScope.BMIValue = "Obese";
+        }
    //chance of getting diabetes based on age, bmi, gender
    //based on http://care.diabetesjournals.org/content/30/6/1562.full.pdf
    if (Gender == "female"){ if (AGE > 18 && AGE < 44){
@@ -146,7 +152,7 @@ patientControllers.controller('DetailsController', ['$scope','$rootScope','$http
             else if (BMI < 35 && BMI >30){Chance = 27.3;}
             else if (BMI >35){Chance = 36.0;}
         }
-   };
+   }
    if (Gender == "male"){ if (AGE > 18 && AGE < 44){
         if (BMI < 18.5){ Chance = 7.6;}
         else if (BMI < 25 && BMI >18.5){Chance = 19.8;}
@@ -168,7 +174,7 @@ patientControllers.controller('DetailsController', ['$scope','$rootScope','$http
             else if (BMI < 35 && BMI >30){Chance = 29.6;}
             else if (BMI >35){Chance = 34.7;}
         }
-   };
+   }
    });
    });
    // below is how to assign a value to an object or variable that can then be used for the 
@@ -181,12 +187,12 @@ patientControllers.controller('DetailsController', ['$scope','$rootScope','$http
    AOneC = "0";
    if (data4.total != 0){
    AOneC = data4.entry[0].resource.valueString[6];
-   };
+   }
    
    
    //17856-6 - loinc code for A1c
-  
-   ismale = "no"
+
+       ismale = "no";
    genderhosp= "";
 genderamp= "";
 genderdeath= "";
@@ -199,510 +205,502 @@ if (data11.entry[0].resource.gender === "male"){ismale = "yes";}
 }]);  
 patientControllers.controller('technology_usedController', ['$scope','$rootScope','$http','$routeParams',
     function ($scope, $rootScope, $http, $routeParams){}]);
-    
+
 patientControllers.controller('nodiabetesController', ['$scope','$rootScope','$http','$routeParams',
-      function ($scope, $rootScope, $http, $routeParams){
-          
-$scope.myDataSource1 = {
-    chart: {
-        caption: "prevelince of diabetes in the USA in millions",
-        subcaption: "2012 statistics",
-        startingangle: "200",
-        showlabels: "0",
-        showlegend: "1",
-        enablemultislicing: "0",
-        slicingdistance: "15",
-        showpercentvalues: "1",
-        showpercentintooltip: "0",
-        plottooltext: "Age group : $label Total visit : $datavalue",
-        theme: "fint"
-    },
-    data: [
-        {
-            label: "diagnosed Diabetes",
-            value: "20.9"
-        },
-        {
-            label: "undiagnosed Diabetes",
-            value: "8.1"
-        },
-	{
-            label: "Prediabetes",
-            value: "86"
-        },
-        {
-            label: "without Diabetes or prediabetes",
-            value: "197.8"
-        }
-        
-    ]
-};
- 
- $scope.myDataSource2 = {
-    chart: {
-        caption: "Percentage of Diabetes per race",
-        subCaption: "",
-        numberPrefix: "%",
-        theme: "ocean"
-    },
-    data:[{
-        
-        label: "non-Hispanic whites",
-        value: "7.6"
-    },
-    {
-        label: "Asian Americans",
-        value: "9.0"
-    },
-	{
-        label: "Hispanics",
-        value: "12.8"
-    },
-	{
-        label: "non-Hispanic blacks",
-        value: "13.2"
-    },
-    {
-        label: "American Indians/Alaskan Natives",
-        value: "15.9"
-    }
-    ]
-};
+    function ($scope, $rootScope, $http, $routeParams) {
 
-$scope.myDataSource3 = {
-    chart: {
-        caption: "Major Cost Percentages, Subtotal = $245 billion",
-        subcaption: "2012 statistics",
-        startingangle: "20",
-        showlabels: "0",
-        showlegend: "1",
-        enablemultislicing: "0",
-        slicingdistance: "15",
-        showpercentvalues: "1",
-        showpercentintooltip: "0",
-        plottooltext: "Age group : $label Total visit : $datavalue",
-        theme: "fint"
-    },
-    data: [
-        {
-            label: "hospital inpatient care",
-            value: "43"
-        },
-	{
-            label: "prescription medications",
-            value: "18"
-        },
-        {
-            label: "anti-diabetic agents and diabetes supplies",
-            value: "12"
-        },
-	{
-            label: "physician office visits",
-            value: "9"
-        },
-        {
-            label: "nursing/residential facility stays",
-            value: "8"
-        },
-	{
-            label: "other",
-            value: "10"
-        }
-        
-    ]
-};
-$scope.myDataSource4 = {
-    //based on http://care.diabetesjournals.org/content/30/6/1562.full.pdf
-    chart: {
-        caption: "Lifetime risk of developing Diabetes based on current Age, Gender and BMI",
-        subCaption: "Patient Gender: "+Gender,
-        numberPrefix: "",
-        theme: "ocean"
-    },
-    data:[{
-        label: "AGE in years.",
-        value: ""+AGE 
-    },
-    {
-        label: "BMI.",
-        value: ""+BMI
-    },
-    {
-        label: "Percent chance of developing Diabetes.",
-        value: ""+Chance
-    },
-    ]
-};
-$scope.attrs = {
-    "caption": "BMI ranges and were the patient falls on it.",
-    "numberprefix": "",
-    "plotgradientcolor": "",
-    "bgcolor": "FFFFFF",
-    "showalternatehgridcolor": "0",
-    "divlinecolor": "CCCCCC",
-    "showvalues": "0",
-    "showcanvasborder": "0",
-    "canvasborderalpha": "0",
-    "canvasbordercolor": "CCCCCC",
-    "canvasborderthickness": "1",
-    "yaxismaxvalue": "",
-    "captionpadding": "30",
-    "linethickness": "1",
-    "yaxisvaluespadding": "15",
-    "legendshadow": "0",
-    "legendborderalpha": "0",
-    "palettecolors": "#f8bd19,#008ee4,#33bdda,#e44a00,#6baa01,#583e78",
-    "showborder": "0"
-};
+        $scope.myDataSource1 = {
+            chart: {
+                caption: "Prevalence of diabetes in the USA",
+                subcaption: "2012 (Millions)",
+                startingangle: "200",
+                showlabels: "0",
+                showlegend: "1",
+                enablemultislicing: "0",
+                slicingdistance: "15",
+                showpercentvalues: "1",
+                showpercentintooltip: "0",
+                plottooltext: "Age group : $label Total visit : $datavalue",
+                theme: "fint"
+            },
+            data: [
+                {
+                    label: "Diagnosed Diabetes",
+                    value: "20.9"
+                },
+                {
+                    label: "Undiagnosed Diabetes",
+                    value: "8.1"
+                },
+                {
+                    label: "Pre-diabetes",
+                    value: "86"
+                },
+                {
+                    label: "Without Diabetes or Pre-diabetes",
+                    value: "197.8"
+                }
 
-$scope.categories = [
-    {
-        "category": [
-            {
-                "label": "Underweight - Healthy"
+            ]
+        };
+
+        $scope.myDataSource2 = {
+            chart: {
+                caption: "Risk of Diabetes",
+                subCaption: "",
+                numberSuffix: "%",
+                theme: "ocean"
             },
-            {
-                "label": "Healthy - Overwieght"
+            data: [{
+
+                label: "Non-Hispanic whites",
+                value: "7.6"
             },
-            {
-                "label": "Overwieght  - Obese"
+                {
+                    label: "Asian Americans",
+                    value: "9.0"
+                },
+                {
+                    label: "Hispanics",
+                    value: "12.8"
+                },
+                {
+                    label: "Non-Hispanic blacks",
+                    value: "13.2"
+                },
+                {
+                    label: "American Indians/Alaskan Natives",
+                    value: "15.9"
+                }
+            ]
+        };
+
+        $scope.myDataSource3 = {
+            chart: {
+                caption: "Cost of Healthcare by Category, Subtotal = $245B",
+                subcaption: "2012 ($B)",
+                startingangle: "20",
+                showlabels: "0",
+                showlegend: "1",
+                enablemultislicing: "0",
+                slicingdistance: "15",
+                showpercentvalues: "0",
+                showpercentintooltip: "0",
+                numberPrefix: "$",
+                plottooltext: "Age group : $label Total visit : $datavalue",
+                theme: "fint"
             },
+            data: [
+                {
+                    label: "Hospital Inpatient Care",
+                    value: "43"
+                },
+                {
+                    label: "Prescription Medications",
+                    value: "18"
+                },
+                {
+                    label: "Anti-Diabetic Agents and Diabetes Supplies",
+                    value: "12"
+                },
+                {
+                    label: "Physician Office Visits",
+                    value: "9"
+                },
+                {
+                    label: "Nursing/Residential Facility Stays",
+                    value: "8"
+                },
+                {
+                    label: "Other",
+                    value: "10"
+                }
+
+            ]
+        };
+        $scope.myDataSource4 = {
+            //based on http://care.diabetesjournals.org/content/30/6/1562.full.pdf
+            chart: {
+                caption: "Lifetime Risk of Developing Diabetes based on current Age, Gender and BMI",
+                subCaption: "Patient Gender: " + Gender,
+                numberPrefix: "",
+                theme: "ocean"
+            },
+            data: [{
+                label: "AGE in years.",
+                value: "" + AGE
+            },
+                {
+                    label: "BMI.",
+                    value: "" + BMI
+                },
+                {
+                    label: "Percent chance of developing Diabetes.",
+                    value: "" + Chance
+                }
+            ]
+        };
+        $scope.attrs = {
+            "caption": "BMI Scale",
+            "numberprefix": "",
+            "plotgradientcolor": "",
+            "bgcolor": "FFFFFF",
+            "showalternatehgridcolor": "0",
+            "divlinecolor": "CCCCCC",
+            "showvalues": "0",
+            "showcanvasborder": "0",
+            "canvasborderalpha": "0",
+            "canvasbordercolor": "CCCCCC",
+            "canvasborderthickness": "1",
+            "yaxismaxvalue": "",
+            "captionpadding": "30",
+            "linethickness": "1",
+            "yaxisvaluespadding": "15",
+            "legendshadow": "0",
+            "legendborderalpha": "0",
+            "palettecolors": "#f8bd19,#008ee4,#33bdda,#e44a00,#6baa01,#583e78",
+            "showborder": "0"
+        };
+
+        $scope.categories = [
             {
-                "label": "Obese"
+                "category": [
+                    {
+                        "label": "Underweight"
+                    },
+                    {
+                        "label": "Healthy"
+                    },
+                    {
+                        "label": "Overweight"
+                    },
+                    {
+                        "label": "Obese"
+                    }
+
+                ]
             }
-           
-        ]
-    }
-];
+        ];
 
-$scope.dataset = [
-    {
-        "seriesname": "BMI ranges",
-        "data": [
+        $scope.dataset = [
             {
-                "value": "0"
+                "seriesname": "BMI ranges",
+                "data": [
+                    {
+                        "value": "0"
+                    },
+                    {
+                        "value": "18.9"
+                    },
+                    {
+                        "value": "24.9"
+                    },
+                    {
+                        "value": "29.9"
+                    }
+                ]
             },
             {
-                "value": "18.9"
-            },
-            {
-                "value": "24.9"
-            },
-            {
-                "value": "29.9"
+                "seriesname": "Patient BMI",
+                "data": [
+                    {
+                        "value": "" + BMI
+                    },
+                    {
+                        "value": "" + BMI
+                    },
+                    {
+                        "value": "" + BMI
+                    },
+                    {
+                        "value": "" + BMI
+                    }
+
+                ]
             }
-        ]
-    },
-    {
-        "seriesname": "Patient BMI",
-        "data": [
-            {
-                "value": ""+BMI
+        ];
+
+
+    }]);
+patientControllers.controller('ReportsController', ['$scope', '$rootScope', '$http', '$routeParams',
+    function ($scope, $rootScope, $http, $routeParams) {
+        $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_id=46&_format=json').success(function (data) {
+
+            $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Observation?code=17856-6&patient=' + $rootScope.patients1[$rootScope.x].id + '&_format=json').success(function (data4) {
+                $rootScope.patients40 = data4.entry;
+
+            });
+        });
+
+        $scope.myDataSource = {
+            chart: {
+                caption: "A1C Diabetes Blood Test Screening",
+                subCaption: "If over 6.5% then patient is Diabetic",
+                numberSuffix: "%",
+                theme: "ocean"
             },
-            {
-                "value": ""+BMI
+            data: [{
+
+                label: "Normal",
+                value: "5.7"
             },
-            {
-                "value": ""+BMI
+                {
+                    label: "Diabetes",
+                    value: "6.5"
+                },
+                {
+                    label: "Patient's",
+                    value: "" + AOneC
+                }
+            ]
+        };
+
+        ////////////////////
+        $scope.myDataSource1 = {
+            chart: {
+                caption: "Prevalence of Diabetes in the USA",
+                subcaption: "2012 (Millions)",
+                startingangle: "200",
+                showlabels: "0",
+                showlegend: "1",
+                enablemultislicing: "0",
+                slicingdistance: "15",
+                showpercentvalues: "1",
+                showpercentintooltip: "0",
+                plottooltext: "Age group : $label Total visit : $datavalue",
+                theme: "fint"
             },
-            {
-                "value": ""+BMI
+            data: [
+                {
+                    label: "Diagnosed Diabetes",
+                    value: "20.9"
+                },
+                {
+                    label: "Undiagnosed Diabetes",
+                    value: "8.1"
+                },
+                {
+                    label: "Prediabetes",
+                    value: "86"
+                },
+                {
+                    label: "Without Diabetes or Pre-diabetes",
+                    value: "197.8"
+                }
+
+            ]
+        };
+
+        $scope.myDataSource2 = {
+            chart: {
+                caption: "Risk of Diabetes",
+                subCaption: "",
+                numberSuffix: "%",
+                theme: "ocean"
             },
-            
-        ]
-    }
-];
-    
+            data: [{
 
-
-
-
-
-      }]);
-patientControllers.controller('ReportsController', ['$scope','$rootScope','$http','$routeParams',
-      function ($scope, $rootScope, $http, $routeParams){ //p=90;
-   //$http.get('js/data1.json').success(function(data){
-   $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Patient?_id=46&_format=json').success(function(data){
-   
-   $http.get('http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base/Observation?code=17856-6&patient=' +$rootScope.patients1[$rootScope.x].id+ '&_format=json').success(function(data4) {
-          $rootScope.patients40 = data4.entry;
-  
-  
-  // this code checks to see if there is a loinc code.
-
-    
- });
-  }); 
-  
-   $scope.myDataSource = {
-    chart: {
-        caption: "A1C Diabetes blood test screening",
-        subCaption: "If over %6.5 then patient is Diabetic. if %0 then no patient data available",
-        numberPrefix: "%",
-        theme: "ocean"
-    },
-    data:[{
-        
-        label: "Normal",
-        value: "5.7"
-    },
-    {
-        label: "Diabetes",
-        value: "6.5"
-    },
-    {
-        label: "Patient's",
-        value: ""+AOneC
-    }
-    ]
-};
-  
- ////////////////////
- $scope.myDataSource1 = {
-    chart: {
-        caption: "prevelince of diabetes in the USA in millions",
-        subcaption: "2012 statistics",
-        startingangle: "200",
-        showlabels: "0",
-        showlegend: "1",
-        enablemultislicing: "0",
-        slicingdistance: "15",
-        showpercentvalues: "1",
-        showpercentintooltip: "0",
-        plottooltext: "Age group : $label Total visit : $datavalue",
-        theme: "fint"
-    },
-    data: [
-        {
-            label: "diagnosed Diabetes",
-            value: "20.9"
-        },
-        {
-            label: "undiagnosed Diabetes",
-            value: "8.1"
-        },
-	{
-            label: "Prediabetes",
-            value: "86"
-        },
-        {
-            label: "without Diabetes or prediabetes",
-            value: "197.8"
-        }
-        
-    ]
-};
- 
- $scope.myDataSource2 = {
-    chart: {
-        caption: "Percentage of Diabetes per race",
-        subCaption: "",
-        numberPrefix: "%",
-        theme: "ocean"
-    },
-    data:[{
-        
-        label: "non-Hispanic whites",
-        value: "7.6"
-    },
-    {
-        label: "Asian Americans",
-        value: "9.0"
-    },
-	{
-        label: "Hispanics",
-        value: "12.8"
-    },
-	{
-        label: "non-Hispanic blacks",
-        value: "13.2"
-    },
-    {
-        label: "American Indians/Alaskan Natives",
-        value: "15.9"
-    }
-    ]
-};
-
-$scope.myDataSource3 = {
-    chart: {
-        caption: "Major Cost Percentages, Subtotal = $245 billion",
-        subcaption: "2012 statistics",
-        startingangle: "20",
-        showlabels: "0",
-        showlegend: "1",
-        enablemultislicing: "0",
-        slicingdistance: "15",
-        showpercentvalues: "1",
-        showpercentintooltip: "0",
-        plottooltext: "Age group : $label Total visit : $datavalue",
-        theme: "fint"
-    },
-    data: [
-        {
-            label: "hospital inpatient care",
-            value: "43"
-        },
-	{
-            label: "prescription medications",
-            value: "18"
-        },
-        {
-            label: "anti-diabetic agents and diabetes supplies",
-            value: "12"
-        },
-	{
-            label: "physician office visits",
-            value: "9"
-        },
-        {
-            label: "nursing/residential facility stays",
-            value: "8"
-        },
-	{
-            label: "other",
-            value: "10"
-        }
-        
-    ]
-};
- 
- $scope.myDataSource4 = {
-    chart: {
-        caption: "percent chance of hospitilization this year due to diabetes",
-        subcaption:"2010 statistics",
-        
-        numberPrefix: "%",
-        theme: "ocean"
-    },
-    data:[{
-        
-       label: "US total",
-       value: "22.78"
-    },
-    {
-        label: "Your chance",
-        value: ""+genderhosp
-    }
-    ]
-};
- 
-$scope.myDataSource5 = {
-    chart: {
-        caption: "percent chance of lower extremity amputation this year due to diabetes",
-        subCaption: "2010 statistics",
-        numberPrefix: "%",
-        theme: "ocean"
-    },
-    data:[{
-        
-        label: "US total",
-        value: "0.27"
-    },
-    {
-        label: "Your chance",
-        value: ""+genderamp
-    }
-    ]
-};
-$scope.myDataSource6 = {
-    chart: {
-        caption: "Percent chance of dying due to Diabetes",
-        subCaption: "",
-        numberPrefix: "%",
-        theme: "ocean"
-    },
-    data:[{
-        
-        label: "US total",
-        value: "75.81"
-    },
-    {
-        label: "Your chance",
-        value: ""+genderdeath
-    }
-    ]
-};
-$scope.attrs = {
-    "caption": "BMI ranges and were the patient falls on it.",
-    "numberprefix": "",
-    "plotgradientcolor": "",
-    "bgcolor": "FFFFFF",
-    "showalternatehgridcolor": "0",
-    "divlinecolor": "CCCCCC",
-    "showvalues": "0",
-    "showcanvasborder": "0",
-    "canvasborderalpha": "0",
-    "canvasbordercolor": "CCCCCC",
-    "canvasborderthickness": "1",
-    "yaxismaxvalue": "",
-    "captionpadding": "30",
-    "linethickness": "1",
-    "yaxisvaluespadding": "15",
-    "legendshadow": "0",
-    "legendborderalpha": "0",
-    "palettecolors": "#f8bd19,#008ee4,#33bdda,#e44a00,#6baa01,#583e78",
-    "showborder": "0"
-};
-
-$scope.categories = [
-    {
-        "category": [
-            {
-                "label": "Underweight - Healthy"
+                label: "non-Hispanic whites",
+                value: "7.6"
             },
-            {
-                "label": "Healthy - Overwieght"
+                {
+                    label: "Asian Americans",
+                    value: "9.0"
+                },
+                {
+                    label: "Hispanics",
+                    value: "12.8"
+                },
+                {
+                    label: "non-Hispanic blacks",
+                    value: "13.2"
+                },
+                {
+                    label: "American Indians/Alaskan Natives",
+                    value: "15.9"
+                }
+            ]
+        };
+
+        $scope.myDataSource3 = {
+            chart: {
+                caption: "Cost of Healthcare by Category, Subtotal = $245B",
+                subcaption: "2012 ($B)",
+                startingangle: "20",
+                showlabels: "0",
+                showlegend: "1",
+                enablemultislicing: "0",
+                slicingdistance: "15",
+                showpercentvalues: "0",
+                showpercentintooltip: "0",
+                numberPrefix: "$",
+                plottooltext: "Age group : $label Total visit : $datavalue",
+                theme: "fint"
             },
-            {
-                "label": "Overwieght  - Obese"
+            data: [
+                {
+                    label: "Hospital Inpatient Care",
+                    value: "43"
+                },
+                {
+                    label: "Prescription Medications",
+                    value: "18"
+                },
+                {
+                    label: "Anti-Diabetic Agents and Diabetes Supplies",
+                    value: "12"
+                },
+                {
+                    label: "Physician Office Visits",
+                    value: "9"
+                },
+                {
+                    label: "Nursing/Residential Facility Stays",
+                    value: "8"
+                },
+                {
+                    label: "Other",
+                    value: "10"
+                }
+
+            ]
+        };
+
+        $scope.myDataSource4 = {
+            chart: {
+                caption: "Annual Risk of Hospitilization (Diabetes)",
+                subcaption: "2010 statistics",
+
+                numberSuffix: "%",
+                theme: "ocean"
             },
+            data: [{
+
+                label: "US total",
+                value: "22.78"
+            },
+                {
+                    label: "Patient",
+                    value: "" + genderhosp
+                }
+            ]
+        };
+
+        $scope.myDataSource5 = {
+            chart: {
+                caption: "Annual Risk of Lower Extremity Amputation (Diabetes)",
+                subCaption: "2010",
+                numberSuffix: "%",
+                theme: "ocean"
+            },
+            data: [{
+
+                label: "US total",
+                value: "0.27"
+            },
+                {
+                    label: "Patient",
+                    value: "" + genderamp
+                }
+            ]
+        };
+        $scope.myDataSource6 = {
+            chart: {
+                caption: "Deaths from Diabetes per 100,000",
+                subCaption: "Total and Patient Gender",
+                numberSuffix: "",
+                theme: "ocean"
+            },
+            data: [{
+
+                label: "US total",
+                value: "75.81"
+            },
+                {
+                    label: "Patient",
+                    value: "" + genderdeath
+                }
+            ]
+        };
+        $scope.attrs = {
+            "caption": "BMI Scale",
+            "numberprefix": "",
+            "plotgradientcolor": "",
+            "bgcolor": "FFFFFF",
+            "showalternatehgridcolor": "0",
+            "divlinecolor": "CCCCCC",
+            "showvalues": "0",
+            "showcanvasborder": "0",
+            "canvasborderalpha": "0",
+            "canvasbordercolor": "CCCCCC",
+            "canvasborderthickness": "1",
+            "yaxismaxvalue": "",
+            "captionpadding": "30",
+            "linethickness": "1",
+            "yaxisvaluespadding": "15",
+            "legendshadow": "0",
+            "legendborderalpha": "0",
+            "palettecolors": "#f8bd19,#008ee4,#33bdda,#e44a00,#6baa01,#583e78",
+            "showborder": "0"
+        };
+
+        $scope.categories = [
             {
-                "label": "Obese"
+                "category": [
+                    {
+                        "label": "Underweight"
+                    },
+                    {
+                        "label": "Healthy"
+                    },
+                    {
+                        "label": "Overweight"
+                    },
+                    {
+                        "label": "Obese"
+                    }
+
+                ]
             }
-           
-        ]
-    }
-];
+        ];
 
-$scope.dataset = [
-    {
-        "seriesname": "BMI ranges",
-        "data": [
+        $scope.dataset = [
             {
-                "value": "0"
+                "seriesname": "BMI ranges",
+                "data": [
+                    {
+                        "value": "0"
+                    },
+                    {
+                        "value": "18.9"
+                    },
+                    {
+                        "value": "24.9"
+                    },
+                    {
+                        "value": "29.9"
+                    }
+                ]
             },
             {
-                "value": "18.9"
-            },
-            {
-                "value": "24.9"
-            },
-            {
-                "value": "29.9"
+                "seriesname": "Patient BMI",
+                "data": [
+                    {
+                        "value": "" + BMI
+                    },
+                    {
+                        "value": "" + BMI
+                    },
+                    {
+                        "value": "" + BMI
+                    },
+                    {
+                        "value": "" + BMI
+                    }
+
+                ]
             }
-        ]
-    },
-    {
-        "seriesname": "Patient BMI",
-        "data": [
-            {
-                "value": ""+BMI
-            },
-            {
-                "value": ""+BMI
-            },
-            {
-                "value": ""+BMI
-            },
-            {
-                "value": ""+BMI
-            },
-            
-        ]
-    }
-];
- ////////////
-}]);  
+        ];
+        ////////////
 
-
+    }]);

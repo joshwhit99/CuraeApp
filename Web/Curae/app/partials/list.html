@@ -1,20 +1,21 @@
 
 <section class="patientpage">
- <div class="container-fluid">
-    <header class="raw-fluid">
-        <h2 class="span12" style="text-align:center"> Search by typing part of the patient name. <br>
-            Patients may be sorted by ID or by name.<br>
-            Click on the the patient name to see the statistical analysis.</h2>
-    </header>
+    <div class="container-fluid">
+        <header class="raw-fluid">
+            <h2 class="span12" style="text-align:center"> Search by typing part of the patient name. <br>
+                Patients may be sorted by ID or by name.<br>
+                Click on the the patient name to see additional information.</h2>
+        </header>
+        <button class="btn btn-info"><a href="#/technology_used">&gt; Technology Used</a></button>
     </div>
 
-<div class="search">
+    <div class="search">
         <h1> Patient Directory</h1>
         <label>search: </label>
         <input ng-model="query" placeholder="Search for Patients" autofocus>
         <label class="formgroup"> by:
             <select ng-model="patientOrder">
-            
+
                 <option value="name">Name</option>
                 <option value="Id">Id</option>
             </select>
@@ -22,32 +23,32 @@
                 <input type="radio" ng-model="direction" name="direction" checked>
                 ascending
             </label>
-                <label class="formgroup">
+            <label class="formgroup">
                 <input type="radio"  ng-model="direction" name="direction" value="reverse">
-            descending
+                descending
+            </label>
         </label>
     </div>
- 
-  <ul class="patientlist">
-    <li class="patient cf" ng-repeat="item in patients1 |filter: query |
+
+    <ul class="patientlist">
+        <li class="patient cf" ng-repeat="item in patients1 |filter: query |
                 orderBy:patientOrder:direction">
-        <a href="#/details/{{patients1.indexOf(item)}}">
-            
-      <div class="info">
-       
-         <h2>Patient {{item.id}}</h2>
-      </div>
-         <div>   
-        <h2>{{item.name[0].family[0]}} {{item.name[0].given[0]}}</h2>
-        
-        
-       <!-- <h3>{{item.address}}</h3>-->
-      </div>
-        </a>
-    </li>
-    
-  </ul>
-   
+            <a href="#/details/{{patients1.indexOf(item)}}">
+
+                <div class="info">
+
+                    <h2>Patient {{item.id}}</h2>
+                </div>
+                <div>
+                    <h2>{{item.name[0].family[0]}} {{item.name[0].given[0]}}</h2>
+                    <br>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+
 
 </section>
 <script>$rootScope.id = patients1.indexOf(item);</script>
+

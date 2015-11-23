@@ -1,93 +1,105 @@
+<section class="reportinfo" xmlns="http://www.w3.org/1999/html">
 
-<section class="reportinfo">
+    <div class="page-header cf row" ng-model="patients">
+        <!--this heading is an experiment, will need to change it (doesnt work) -->
+        <header>
+            <h2 style="text-align:center"> This patient has diabetes. <br></h2>
 
-    <div class="page-header patient cf row" ng-model="patients">
-        <h2 style="text-align:center"> This patient has diabetes. <br></h2>
-        <h2 style="text-align:center"> This patient's BMI is in the {{BMIValue}} range. </h2>
-        <!DOCTYPE html>
+            <h2 style="text-align:center"> This patient's BMI is in the {{BMIValue}} range. </h2>
+        </header>
     </div >
 
-    <button class="btn btn-info"><a href="#/index.html"> &laquo; Patient Search </a></button>
+    <button class="btn btn-info"><a href="#/index.html"> &laquo; Back to search </a></button>
+
     <!--this is how to get a graph -->
     <div ng-controller="ReportsController">
         <div class="row">
-            <div class="col-lg-6" style="text-align:center">
-                <h2>Population Data</h2>
+            <div class="text-center">
+                <h2>Population Data</h2><br></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="column2d"
+                                datasource="{{myDataSource2}}"
+                        ></fusioncharts>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="pie3d"
+                                datasource="{{myDataSource1}}"
+                        ></fusioncharts>
+                    </div>
+                </div>
             </div>
-        <div class="row">
-            <div class="container">
 
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div id="chartContainer" style="width:100%;height:100%;">
-                            <fusioncharts
-                                    type="column2d"
-                                    datasource="{{myDataSource2}}"
-                            ></fusioncharts></div></div>
-                    <div class="col-lg-6">
-                        <div id="chartContainer" style="width:100%;height:100%;">
-                            <fusioncharts
-                                    type="pie3d"
-                                    datasource="{{myDataSource1}}"
-                            ></fusioncharts></div></div>
-                    <div class="row">
-                        <div class="col-lg-3"><br></div>
-                        <div class="col-lg-6">
-                        <div id="chartContainer" style="width:100%;height:100%;">
+            <div class="row">
+                <div class="text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
                         <fusioncharts
                                 type="pie3d"
                                 datasource="{{myDataSource3}}"
                         ></fusioncharts></div></div></div>
 
-                    <div class="row">
-                        <div class="col-lg-3"><br></div>
-                        <div class="col-lg-6"><br>
-                <div class="row">
-                    <div class="col-lg-6" style="text-align:center">
-                        <h2>Patient Data</h2>
+            <div class="row">
+                <div class="text-center">
+                    <h2>Patient Data</h2><br></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="column2d"
+                                datasource="{{myDataSource}}"
+                        ></fusioncharts>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div id="chartContainer" style="width:100%;height:100%;">
-                            <fusioncharts
-                                    type="column2d"
-                                    datasource="{{myDataSource}}"
-                            ></fusioncharts></div></div>
-                    <div class="col-lg-6">
-                        <div id="chartContainer" style="width:100%;height:100%;">
-                            <fusioncharts
-                                    type="column2d"
-                                    datasource="{{myDataSource4}}"
-                            ></fusioncharts></div></div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="column2d"
+                                datasource="{{myDataSource4}}"
+                        ></fusioncharts>
+                    </div>
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div id="chartContainer" style="width:100%;height:100%;">
-                            <fusioncharts
-                                    type="column2d"
-                                    datasource="{{myDataSource5}}"
-                            ></fusioncharts></div></div>
-                    <div class="col-lg-6">
-                        <div id="chartContainer" style="width:100%;height:100%;">
-                            <fusioncharts
-                                    type="column2d"
-                                    datasource="{{myDataSource6}}"
-                            ></fusioncharts></div></div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="column2d"
+                                datasource="{{myDataSource5}}"
+                        ></fusioncharts>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3"><br></div>
-                    <div class="col-lg-6">
-                        <div id="chartContainer" style="width:100%;height:100%;">
-                            <fusioncharts
-                                    type="msline"
-                                    chart="{{attrs}}"
-                                    categories="{{categories}}"
-                                    dataset="{{dataset}}"
-                            ></fusioncharts></div></div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="column2d"
+                                datasource="{{myDataSource6}}"
+                        ></fusioncharts>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center">
+                    <div id="chartContainer" style="width:100%;height:100%;">
+                        <fusioncharts
+                                type="msline"
+                                chart="{{attrs}}"
+                                categories="{{categories}}"
+                                dataset="{{dataset}}"
+                        ></fusioncharts>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
 </section>
