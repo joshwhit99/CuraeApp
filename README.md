@@ -40,16 +40,23 @@ There are multiple dependencies for the application front end (AngularJS, Bootst
 
 The HAPI FHIR instance used was accessed remotely. A local instance of HAPI FHIR could be installed. Reference the HAPI FHIR documentation for more information at: 
 
+```
 https://github.com/jamesagnew/hapi-fhir.git
+```
+
+MS Azure can be obtained at: 
+```
+https://azure.microsoft.com/en-us/
+```
 
 ## Directory Layout
 
 ```
-Web/app/                    --> all of the source files for the application
-…/app/css			 all of the CSS source files
-…/app/js			 all of the js code for the application
-…/app/partials			 all of the html files for the application
-…/app/angular			 all of the AngularJS JavaScript libraries 
+Web/app/          --> all of the source files for the application
+    /app/css        --> all of the CSS source files
+    /app/js         --> all of the js code for the application
+    /app/partials   --> all of the html files for the application
+    /app/angular    --> all of the AngularJS JavaScript libraries 
 ```
 
 ## Updating Angular
@@ -62,7 +69,10 @@ Alternately, AngularJS can be retrieved from a CDN by replacing the reference to
 https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js
 ```
 
-The latest CDN can be obtained from the download option at http://angularjs.org 
+The latest CDN can be obtained from the download option at
+```
+http://angularjs.org 
+```
 
 ## Updating Bootstrap
 
@@ -80,7 +90,7 @@ The latest CDN and installation instructions can be obtained from the following 
 http://getbootstrap.com/getting-started/#download
 ```
 
-# The following instructions about AngularJS are from the AngularJS template file and contains information about running applications using the AngularJS framework.
+###The following instructions about AngularJS are from the AngularJS template file and contains information about running applications using the AngularJS framework.
 
 ## Serving the Application Files
 
@@ -117,9 +127,6 @@ This really depends on how complex your app is and the overall infrastructure of
 Angular apps are really just a bunch of static html, css and js files that just need to be hosted somewhere they can be accessed by browsers.
 
 If your Angular app is talking to the backend server via xhr or other means, you need to figure out what is the best way to host the static files to comply with the same origin policy if applicable. Usually this is done by hosting the files by the backend server or through reverse-proxying the backend server(s) and webserver(s).
-
-
-
 
 ## Contact
 
